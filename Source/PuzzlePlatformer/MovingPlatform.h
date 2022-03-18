@@ -21,6 +21,9 @@ public:
 
 protected:
 	UPROPERTY(EditAnywhere)
-	float Velocity = 5.f;
+	float Speed = 5.f;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Meta = (MakeEditWidget = true))
+	FVector TargetLocation;
 	
 };
